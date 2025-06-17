@@ -79,4 +79,4 @@ def show():
 
     prediction = model.predict(X_latest.tail(1))[0]
     direction = "📈 Up" if prediction == 1 else "📉 Down"
-    st.metric("Predicted Next-Day Direction", direction)
+    st.metric("2025-01-16 Prediction", direction)
