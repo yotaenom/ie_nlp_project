@@ -1,6 +1,10 @@
 import sys
 import os
 sys.path.append(os.path.dirname(__file__))
+import nltk
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')  
+nltk.download('stopwords')  
 
 import streamlit as st
 from custom_pages import overview, sentiment, forecast
