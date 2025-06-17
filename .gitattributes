@@ -1,5 +1,0 @@
-models/ filter=lfs diff=lfs merge=lfs -text
-data/NewsData.io_TSLA.csv filter=lfs diff=lfs merge=lfs -text
-data/df_en_clean.csv filter=lfs diff=lfs merge=lfs -text
-models/bert_sentiment_model/model.safetensors filter=lfs diff=lfs merge=lfs -text
-data/NewsData_cleaned.csv filter=lfs diff=lfs merge=lfs -text
