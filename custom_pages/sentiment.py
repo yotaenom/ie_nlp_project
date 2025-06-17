@@ -2,7 +2,8 @@ import os
 import torch
 import pandas as pd
 import streamlit as st
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import AutoTokenizer
+from transformers import DistilBertForSequenceClassification
 from utils.preprocess import basic_preprocess
 from utils.visuals import plot_most_common_features
 
@@ -12,7 +13,7 @@ def show():
     # ✅ Load BERT model
     model_path = "models/bert_sentiment_model"
     tokenizer = AutoTokenizer.from_pretrained(model_path)
-    model = AutoModelForSequenceClassification.from_pretrained(model_path)
+    model = DistilBertForSequenceClassification.from_pretrained(model_path)
     model.eval()
 
     # ✅ Label map
