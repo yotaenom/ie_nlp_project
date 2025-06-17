@@ -92,63 +92,63 @@ def show():
         st.markdown("""
             <div class='hover-block'>
                 <div class='hover-title'>📰 TSLA News Coverage</div>
-                <div class='hover-desc'>Analyze a full year of Tesla (TSLA) news articles to extract insights from headlines.</div>
+                <div class='hover-desc'>Analyze daily headlines and descriptions related to Tesla (TSLA) using natural language processing.</div>
             </div>
             <div class='hover-block'>
                 <div class='hover-title'>🎯 Sentiment Classification</div>
-                <div class='hover-desc'>Classify article sentiment using ML: 🟢 <b>Positive</b>, 🟣 <b>Neutral</b>, 🔴 <b>Negative</b>.</div>
+                <div class='hover-desc'>Leverage a fine-tuned BERT model to classify article sentiment into 🟢 <b>Positive</b>, 🟣 <b>Neutral</b>, 🔴 <b>Negative</b>.</div>
             </div>
             <div class='hover-block'>
                 <div class='hover-title'>📈 Price Pattern Linkage</div>
-                <div class='hover-desc'>Establish a foundation for correlating sentiment trends with TSLA stock price movements.</div>
+                <div class='hover-desc'>Forecast next-day stock direction based on sentiment trends and historical price indicators.</div>
             </div>
         """, unsafe_allow_html=True)
 
     elif tab == "Technologies":
         st.markdown("""
             <div class='hover-block'>
-                <div class='hover-title'>💻 Python & Streamlit</div>
-                <div class='hover-desc'>Used to build the interactive web application and user interface.</div>
+                <div class='hover-title'>🧠 BERT (Transformers)</div>
+                <div class='hover-desc'>Used a fine-tuned BERT model for highly accurate sentiment classification on TSLA news data.</div>
             </div>
             <div class='hover-block'>
-                <div class='hover-title'>🧹 NLTK Preprocessing</div>
-                <div class='hover-desc'>Handles tokenization, lemmatization, and stopword removal for text cleaning.</div>
+                <div class='hover-title'>📊 XGBoost Classifier</div>
+                <div class='hover-desc'>Applied for binary classification of next-day TSLA stock direction based on engineered features.</div>
             </div>
             <div class='hover-block'>
-                <div class='hover-title'>📊 TF-IDF Vectorizer</div>
-                <div class='hover-desc'>Converts cleaned headlines into numerical features representing word importance.</div>
+                <div class='hover-title'>📈 yFinance</div>
+                <div class='hover-desc'>Fetched historical TSLA price data and aligned it with daily sentiment scores.</div>
             </div>
             <div class='hover-block'>
-                <div class='hover-title'>🤖 Logistic Regression</div>
-                <div class='hover-desc'>Trained ML model to classify sentiment into Positive, Neutral, or Negative.</div>
+                <div class='hover-title'>📦 Joblib & Pickle</div>
+                <div class='hover-desc'>Used for saving/loading ML models and ensuring efficient deployment across modules.</div>
             </div>
             <div class='hover-block'>
-                <div class='hover-title'>🗂️ Pickle & Joblib</div>
-                <div class='hover-desc'>Used for saving, loading, and deploying the trained model assets efficiently.</div>
+                <div class='hover-title'>🌐 Streamlit</div>
+                <div class='hover-desc'>Framework for building an interactive dashboard with custom layout and navigation controls.</div>
             </div>
         """, unsafe_allow_html=True)
 
     elif tab == "App Features":
         st.markdown("""
             <div class='hover-block'>
-                <div class='hover-title'>🔍 Headline Prediction</div>
-                <div class='hover-desc'>Automatically classifies all news articles by sentiment.</div>
+                <div class='hover-title'>🔍 Daily Sentiment Scan</div>
+                <div class='hover-desc'>Applies BERT to classify all TSLA headlines for the latest available day.</div>
             </div>
             <div class='hover-block'>
-                <div class='hover-title'>📊 Sentiment Chart</div>
-                <div class='hover-desc'>Interactive bar chart showing sentiment distribution over time.</div>
+                <div class='hover-title'>📊 Sentiment Distribution</div>
+                <div class='hover-desc'>Interactive bar chart displays how news is classified into positive, neutral, or negative classes.</div>
             </div>
             <div class='hover-block'>
                 <div class='hover-title'>🧠 Keyword Insights</div>
-                <div class='hover-desc'>Highlights relevant keywords per sentiment class for explainability.</div>
+                <div class='hover-desc'>Extracts and visualizes key terms driving each sentiment label for transparency and explainability.</div>
             </div>
             <div class='hover-block'>
-                <div class='hover-title'>🧼 End-to-End Automation</div>
-                <div class='hover-desc'>From preprocessing to prediction in one pipeline with minimal user effort.</div>
+                <div class='hover-title'>📈 Stock Forecasting</div>
+                <div class='hover-desc'>Leverages XGBoost to predict next-day TSLA price direction based on sentiment and technical indicators.</div>
             </div>
             <div class='hover-block'>
-                <div class='hover-title'>🔗 Modular Design</div>
-                <div class='hover-desc'>Future-ready structure for adding stock movement prediction and more.</div>
+                <div class='hover-title'>🧼 End-to-End Pipeline</div>
+                <div class='hover-desc'>From raw headline ingestion to market prediction, fully automated in a single dashboard.</div>
             </div>
         """, unsafe_allow_html=True)
 
