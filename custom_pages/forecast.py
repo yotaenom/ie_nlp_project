@@ -33,7 +33,7 @@ def show():
     plt.legend()
     st.pyplot(plt)
 
-    st.subheader("🧠 Model Prediction for 025-01-16")
+    st.subheader("🧠 Model Prediction for 2025-01-16")
 
     # --- Load news data ---
     df = pd.read_csv("data/NewsData_cleaned.csv")
@@ -79,3 +79,4 @@ def show():
 
     prediction = model.predict(X_latest.tail(1))[0]
     direction = "📈 Up" if prediction == 1 else "📉 Down"
+    st.metric(direction)
