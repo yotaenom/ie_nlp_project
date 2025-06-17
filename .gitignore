@@ -1,1 +1,11 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore data and models (use LFS)
 data/NewsData.io_TSLA.csv
+
+# Ignore virtual environments
+.env/
+*.env
+*.DS_Store
