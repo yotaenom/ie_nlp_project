@@ -45,20 +45,12 @@ Extract them into the appropriate `models/` and `data/` directories.
 │   └── __init__.py
 │
 ├── data/                     # News and stock datasets
-│   ├── df_en_clean.csv
-│   ├── NewsData_cleaned.csv
-│   └── tsla_*.csv
-│
+│   
 ├── eda/                      # Final EDA notebook
 ├── eda_old/                  # Intermediate EDA notebooks
 ├── main.py                   # App entry point
 │
 ├── models/
-│   ├── bert_sentiment_model/ # HuggingFace model
-│   ├── logistic_model.pkl
-│   ├── xgb_direction_model.pkl
-│   ├── tfidf_vectorizer.pkl
-│   └── label_encoder.pkl
 │
 ├── utils/                    # Helper functions
 │   ├── config.py
