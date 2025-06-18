@@ -96,7 +96,7 @@ def show():
             </div>
             <div class='hover-block'>
                 <div class='hover-title'>🎯 Sentiment Classification</div>
-                <div class='hover-desc'>Leverage a fine-tuned BERT model to classify article sentiment into 🟢 <b>Positive</b>, 🟣 <b>Neutral</b>, 🔴 <b>Negative</b>.</div>
+                <div class='hover-desc'>Leverage a fine-tuned DistilBERT model to classify article sentiment into 🟢 <b>Positive</b>, 🟣 <b>Neutral</b>, 🔴 <b>Negative</b>.</div>
             </div>
             <div class='hover-block'>
                 <div class='hover-title'>📈 Price Pattern Linkage</div>
@@ -107,8 +107,8 @@ def show():
     elif tab == "Technologies":
         st.markdown("""
             <div class='hover-block'>
-                <div class='hover-title'>🧠 BERT (Transformers)</div>
-                <div class='hover-desc'>Used a fine-tuned BERT model for highly accurate sentiment classification on TSLA news data.</div>
+                <div class='hover-title'>🧠 DistilBERT (Transformers)</div>
+                <div class='hover-desc'>Used a fine-tuned DistilBERT model for highly accurate sentiment classification on TSLA news data.</div>
             </div>
             <div class='hover-block'>
                 <div class='hover-title'>📊 XGBoost Classifier</div>
@@ -132,7 +132,7 @@ def show():
         st.markdown("""
             <div class='hover-block'>
                 <div class='hover-title'>🔍 Daily Sentiment Scan</div>
-                <div class='hover-desc'>Applies BERT to classify all TSLA headlines for the latest available day.</div>
+                <div class='hover-desc'>Applies DistilBERT to classify all TSLA headlines for the latest available day.</div>
             </div>
             <div class='hover-block'>
                 <div class='hover-title'>📊 Sentiment Distribution</div>
