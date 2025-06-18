@@ -4,13 +4,13 @@
 This project applies Natural Language Processing (NLP) and machine learning models to forecast Tesla stock movements using news sentiment and historical data.
 
 ### Key features:
-- Sentiment classification (positive, negative, neutral) of news headlines using a BERT model  
+- Sentiment classification (positive, negative, neutral) of news headlines using a **DistilBERT** model  
 - Stock movement prediction using logistic regression and XGBoost  
 - Integration of textual sentiment and time-aligned stock price data  
 - Streamlit-based interactive dashboard
 
 ### Models used:
-1. **BERT** – Fine-tuned for sentiment classification  
+1. **DistilBERT** – Fine-tuned for sentiment classification 
 2. **Logistic Regression** – Predicts next-day stock direction  
 3. **XGBoost** – Captures non-linear trends in stock movement  
 4. **TF-IDF** – Extracts relevant features from cleaned news text  
