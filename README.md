@@ -84,5 +84,15 @@ This will launch a browser-based dashboard with multiple tabs:
 
 ---
 
+## Next Steps & Future Improvements
+
+- Shift from binary classification (Up/Down) to **continuous price prediction** using regression models  
+- Incorporate **real-time news feeds** for live sentiment updates and immediate forecasting  
+- Integrate with **trading platforms or portfolio tools** for actionable financial insights  
+- Explore **multi-stock sentiment modeling** beyond Tesla for broader portfolio forecasting  
+- Improve prediction granularity from **daily** to **intra-day (e.g., 15-min windows)** using higher-frequency data
+
+---
+
 ## Collaborators
 **EDWIN ABBOUD BLANCO**, **OMER ALTHWAINI**, **SAMIR BARAKAT**, **YOTARO ENOMOTO**, **OMAR HARRADI**, **HALIL CAN KULOGLU**
