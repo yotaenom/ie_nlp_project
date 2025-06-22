@@ -77,13 +77,13 @@ This will launch a browser-based dashboard with multiple tabs:
 
 ---
 
-# How the App Works (Quick Overview)
+## How the App Works (Quick Overview)
 
 This NLP-driven dashboard forecasts Tesla (TSLA) stock direction using news sentiment. Below is a quick explanation of each component and how they integrate:
 
 ---
 
-## `main.py`
+### `main.py`
 
 - Entry point for the app.
 - Sets up Streamlit config.
@@ -94,7 +94,7 @@ This NLP-driven dashboard forecasts Tesla (TSLA) stock direction using news sent
 
 ---
 
-## `overview.py`
+### `overview.py`
 
 - Displays:
   - Project goals
@@ -104,7 +104,7 @@ This NLP-driven dashboard forecasts Tesla (TSLA) stock direction using news sent
 
 ---
 
-## `sentiment.py`
+### `sentiment.py`
 
 - Loads a fine-tuned **DistilBERT** model.
 - Classifies TSLA news headlines as:
@@ -117,7 +117,7 @@ This NLP-driven dashboard forecasts Tesla (TSLA) stock direction using news sent
 
 ---
 
-## `forecast.py`
+### `forecast.py`
 
 - Loads:
   - Stock price data
@@ -128,7 +128,7 @@ This NLP-driven dashboard forecasts Tesla (TSLA) stock direction using news sent
 
 ---
 
-## `utils/`
+### `utils/`
 
 - `config.py`: Downloads required NLTK resources.
 - `preprocess.py`: Cleans and lemmatizes news text.
@@ -138,7 +138,7 @@ This NLP-driven dashboard forecasts Tesla (TSLA) stock direction using news sent
 ---
 
 
-## How It Works Together
+### How It Works Together
 
 1. User navigates via `main.py` sidebar.
 2. `sentiment.py`:
