@@ -77,6 +77,80 @@ This will launch a browser-based dashboard with multiple tabs:
 
 ---
 
+# How the App Works (Quick Overview)
+
+This NLP-driven dashboard forecasts Tesla (TSLA) stock direction using news sentiment. Below is a quick explanation of each component and how they integrate:
+
+---
+
+## `main.py`
+
+- Entry point for the app.
+- Sets up Streamlit config.
+- Handles navigation between pages:
+  - Overview
+  - Sentiment
+  - Forecast
+
+---
+
+## `overview.py`
+
+- Displays:
+  - Project goals
+  - Technologies used
+  - Contributors
+- Presented in a styled, interactive layout.
+
+---
+
+## `sentiment.py`
+
+- Loads a fine-tuned **DistilBERT** model.
+- Classifies TSLA news headlines as:
+  - Positive
+  - Neutral
+  - Negative
+- Visualizes:
+  - Daily sentiment distribution
+  - Keyword drivers per sentiment category
+
+---
+
+## `forecast.py`
+
+- Loads:
+  - Stock price data
+  - Sentiment scores
+- Engineers features.
+- Uses a pre-trained **XGBoost** model to forecast:
+  - Next-day TSLA price direction.
+
+---
+
+## `utils/`
+
+- `config.py`: Downloads required NLTK resources.
+- `preprocess.py`: Cleans and lemmatizes news text.
+- `visuals.py`: Generates keyword bar charts by sentiment.
+- `models.py`: Loads ML models and vectorizers.
+
+---
+
+
+## How It Works Together
+
+1. User navigates via `main.py` sidebar.
+2. `sentiment.py`:
+   - Classifies & visualizes daily news sentiment.
+3. `forecast.py`:
+   - Combines news sentiment + price data
+   - Predicts TSLA stock direction
+4. All components rely on:
+   - Shared preprocessing logic
+   - Unified modeling pipelines in `utils/`
+
+
 ## Notes
 - For full functionality, make sure the model paths in `utils/config.py` are correctly set.
 - Model training was conducted offline. This app runs inference only.
